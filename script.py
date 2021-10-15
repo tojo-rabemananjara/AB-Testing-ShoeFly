@@ -53,3 +53,6 @@ b_clicks_pivot = b_clicks_by_day.pivot(
 )
 b_clicks_pivot['percent_clicked'] = ((b_clicks_pivot[True]/(b_clicks_pivot[True] + b_clicks_pivot[False])) * 100).round(2)
 print(b_clicks_pivot)
+
+#The percent click for A is 37.48% compared to 30.83% for B. Overall use ad A. This pattern of A performing better than B is further
+# evidenced in the distribution of A/B ad clicks by day where A has more %clicked for every day except Tuesday.
